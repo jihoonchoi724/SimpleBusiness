@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1463300339 source:c:\users\paul\documents\c++ projects\simplebusiness\src\game.cpp
+	<iostream>
+	<string>
+	"business.h"
+	"item.h"
+	"game.h"
+
+1463300007 c:\users\paul\documents\c++ projects\simplebusiness\src\business.h
+	<iostream>
+	<vector>
+	"item.h"
+
+1463298999 c:\users\paul\documents\c++ projects\simplebusiness\src\item.h
+	<iostream>
+	<string>
+
+1463299777 source:c:\users\paul\documents\c++ projects\simplebusiness\src\main.cpp
+	<iostream>
+	"game.h"
+
+1463299100 c:\users\paul\documents\c++ projects\simplebusiness\src\game.cpp
+	<iostream>
+	<string>
+	"business.h"
+	"item.h"
+
+1463300251 source:c:\users\paul\documents\c++ projects\simplebusiness\src\business.cpp
+	<iostream>
+	<string>
+	"business.h"
+	"item.h"
+
+1463299057 source:c:\users\paul\documents\c++ projects\simplebusiness\src\item.cpp
+	<iostream>
+	<string>
+	"item.h"
+
+1463299053 c:\users\paul\documents\c++ projects\simplebusiness\src\business.cpp
+	<iostream>
+	<string>
+	"business.h"
+	"item.h"
+
+1463299057 c:\users\paul\documents\c++ projects\simplebusiness\src\item.cpp
+	<iostream>
+	<string>
+	"item.h"
+
+1463300328 c:\users\paul\documents\c++ projects\simplebusiness\src\game.h
+	<iostream>
+	<string>
+	"business.h"
+	"item.h"
+
