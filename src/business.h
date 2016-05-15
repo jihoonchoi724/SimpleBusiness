@@ -24,7 +24,7 @@ class Business
         std::vector<Item*> items;
 
     public:
-        Business(std::string name, double cashOnHand, double assetsValue, double rating, int month);
+        Business(std::string name, double cashOnHand, double assetsValue, double rating);
         void setCashOnHand(double cashOnHand);
         void setAssetsValue(double assetsValue);
         void setRating(double rating);
@@ -36,6 +36,7 @@ class Business
         void setStores(int numStores);
         void setBuildings(int numBuildings);
         void setEmployees(int numEmployees);
+        void incrementMonth();
         std::string getName();
         double getCashOnHand();
         double getAssetsValue();
@@ -49,13 +50,13 @@ class Business
         int getBuildings();
 };
 
-Business::Business(std::string name, double cashOnHand, double assetsValue, double rating, int month)
+Business::Business(std::string name, double cashOnHand, double assetsValue, double rating)
 {
     this->name = name;
     this->cashOnHand = cashOnHand;
     this->assetsValue = assetsValue;
     this->rating = rating;
-    this->month = month;
+    month = 1;
     income = 0;
     expenses = 0;
     wages = 0;
@@ -118,6 +119,18 @@ void Business::setBuildings(int numBuildings)
 void Business::setEmployees(int numEmployees)
 {
     this->numEmployees = numEmployees;
+}
+
+void Business::incrementMonth()
+{
+    if (month < 12)
+    {
+        ++month;
+    }
+    else if (month >= 12)
+    {
+        month = 1;
+    }
 }
 
 std::string Business::getName()

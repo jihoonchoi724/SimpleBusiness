@@ -1,17 +1,16 @@
 #include <iostream>
-#include "item.h"
-#include "business.h"
+#include "game.cpp"
 using namespace std;
 
 int main()
 {
-    Item i("Sample Item", 0, 9, 10, 12);
-    cout << "Name: " << i.getName() << endl;
-    cout << "ID: " << i.getID() << endl;
-    cout << "Production Price: $" << i.getProducePrice() << endl;
-    cout << "Buying Price: $" << i.getBuyPrice() << endl;
-    cout << "Selling Price: $" << i.getSellPrice() << endl;
+    Item* testItem = createItem("Test Item", 0, 9, 10, 15);
+    cout << testItem->getName() << endl;
+    cout << testItem->getID() << endl;
+    cout << testItem->getProducePrice() << endl;
+    cout << testItem->getBuyPrice() << endl;
+    cout << testItem->getSellPrice() << endl;
 
-
+    delete testItem;
     return 0;
 }
